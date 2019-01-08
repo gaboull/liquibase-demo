@@ -1,0 +1,12 @@
+databaseChangeLog:
+- changeSet:
+    id: 1546945087833-1
+    author: gabo (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: price
+            type: numeric(12, 4)
+        tableName: users
+

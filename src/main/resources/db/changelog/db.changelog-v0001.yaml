@@ -1,0 +1,34 @@
+databaseChangeLog:
+- changeSet:
+    id: 1546936715203-1
+    author: gabo (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              primaryKey: true
+              primaryKeyName: users_pkey
+            name: id
+            type: SERIAL
+        - column:
+            constraints:
+              nullable: false
+            name: userid
+            type: VARCHAR(100)
+        - column:
+            name: name
+            type: VARCHAR(255)
+        tableName: users
+- changeSet:
+    id: 1546936715203-2
+    author: gabo (generated)
+    changes:
+    - createIndex:
+        columns:
+        - column:
+            name: userid
+        indexName: users_key001
+        tableName: users
+        unique: true

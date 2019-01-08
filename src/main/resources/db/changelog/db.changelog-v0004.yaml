@@ -1,0 +1,12 @@
+databaseChangeLog:
+- changeSet:
+    id: 1546945087844-1
+    author: gabo (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: height
+            type: numeric(3)
+        tableName: users
+

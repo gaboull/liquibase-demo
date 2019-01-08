@@ -1,0 +1,12 @@
+databaseChangeLog:
+- changeSet:
+    id: 1546943027763-1
+    author: gabo (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: bird_date
+            type: date
+        tableName: users
+         

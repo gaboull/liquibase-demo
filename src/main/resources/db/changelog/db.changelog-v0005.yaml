@@ -1,0 +1,32 @@
+databaseChangeLog:
+- changeSet:
+    id: 1546948242634-1
+    author: gabo (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              primaryKey: true
+              primaryKeyName: roles_pkey
+            name: id
+            type: SERIAL
+        - column:
+            constraints:
+              nullable: false
+            name: name
+            type: VARCHAR(100)
+        tableName: roles
+- changeSet:
+    id: 1546948242634-2
+    author: gabo (generated)
+    changes:
+    - createIndex:
+        columns:
+        - column:
+            name: name
+        indexName: roles_key001
+        tableName: users
+        unique: true
+
